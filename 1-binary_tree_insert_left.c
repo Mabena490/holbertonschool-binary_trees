@@ -19,10 +19,9 @@ return (NULL);
 
 if (parent->left == NULL)
 parent->left = new_node;
-
 else
-    {
-      /*parent->left = new_node;*/ /*moved down, cos segf*/
+{
+/*parent->left = new_node;*/ /*moved down, cos segf*/
 new_node->left = parent->left;
 parent->left = new_node;
 new_node->left->parent = new_node;
